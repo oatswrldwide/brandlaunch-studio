@@ -1,10 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
-
 const Contact = () => {
-  return (
-    <section id="contact" className="py-24 px-4">
+  return <section id="contact" className="py-24 px-4">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto space-y-12">
           <div className="text-center space-y-4">
@@ -23,11 +21,8 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-bold">Email Us</h3>
-                <a 
-                  href="mailto:info@wiredbusiness.co.za" 
-                  className="text-primary hover:underline block"
-                >
-                  info@wiredbusiness.co.za
+                <a href="mailto:info@wiredbusiness.co.za" className="text-primary hover:underline block">
+                  info@wiredbiz.co.za
                 </a>
               </CardContent>
             </Card>
@@ -38,11 +33,8 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-bold">Call Us</h3>
-                <a 
-                  href="tel:+27123456789" 
-                  className="text-primary hover:underline block"
-                >
-                  +27 12 345 6789
+                <a href="tel:+27123456789" className="text-primary hover:underline block">
+                  ​+27 81 366 0538   
                 </a>
               </CardContent>
             </Card>
@@ -53,26 +45,18 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-bold">Location</h3>
-                <p className="text-muted-foreground">
-                  South Africa
-                </p>
+                <p className="text-muted-foreground">Johannesburg    </p>
               </CardContent>
             </Card>
           </div>
 
           <div className="text-center pt-8">
-            <Button 
-              size="lg" 
-              onClick={() => window.location.href = 'mailto:info@wiredbusiness.co.za'}
-              className="text-lg px-8"
-            >
+            <Button size="lg" onClick={() => window.location.href = 'mailto:info@wiredbusiness.co.za'} className="text-lg px-8">
               Schedule a Consultation
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
