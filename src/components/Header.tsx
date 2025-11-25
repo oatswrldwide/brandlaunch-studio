@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/wired-logo.jpeg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +16,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <img src={logo} alt="Wired Business & Advisory" className="h-16 w-auto" />
+            <h1 className="text-xl md:text-2xl font-bold text-foreground">Wired Business & Advisory</h1>
           </div>
 
           {/* Desktop Navigation */}
